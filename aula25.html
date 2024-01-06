@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        *{
+            box-sizing: border-box; 
+            padding: 0px;
+        }
+        .main {
+            border: 1px dotted #f00;
+            margin: auto;
+            width: 960px;
+        }
+        #cabecalho,#corpo,#rodape{
+           border: 1px dotted #aaa;
+        }
+        #cabecalho{
+            position: relative;
+            top:0px; 
+            left:0px; 
+            right:100%; 
+            bottom:100px;
+        }
+        #corpo{
+            position: absolute;
+            top:100px;
+            left: 0px;
+            width: 100%;
+            height: 570px;
+        }
+        #caixa1, #caixa2, #caixa3{
+            width: 150px;
+            height: 70;
+        }
+        #caixa1{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: #f00;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        #caixa2{
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background-color: #0f0;
+            color: #fff;
+            border: 1px solid #000;
+        }
+        #caixa3{
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            background-color: #00f;
+            color: #fff;
+            border: 1px solid #000;
+            z-index: 100;
+        }
+        #rodape{
+            position: absolute;
+            top: 670px;
+            left: 0px;
+            width: 100%;
+            height: 90px;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="cabecalho">
+        <div class="main">
+            <h1>HTML CURSO</h1>
+        </div>
+    </div>
+
+    <div id="corpo">
+        <div class="main">
+            <div id="caixa1">
+                <h3>caixa1</h3>
+            </div>
+            <div id="caixa2">
+                <h3>caixa2</h3>
+            </div>
+            <div id="caixa3">
+                <h3>caixa 3</h3>
+            </div>
+            <p>Nesta aula vamos aprender a manipular divs, usando 
+               position, top, left, width, height</p>
+            <p>Se não fez o curso ta esperando oque?</p>
+            <p>siga-nos na nossas redes sociais</p>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <div class="main">
+        <p>www.youtube.com/meninohtml</p>
+        <p>wesley cursos</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--manipular div, posicionar div, usar absolute, estetic, tofix e relative
+layout fixo fechado 
+
+            top:; TOP é a margem borda de cima pra baixo, top e bottom configuram o eixo y
+            left:;  left margem esquerda e right configuram o eixo x
+            right:;  margem direita 
+            bottom:;  margem borda de baixo pra cima 
+        
+        se a position:static nao vai mover! pra mover é absolute, relative e fixe -->
