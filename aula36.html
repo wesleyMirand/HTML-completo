@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+
+        .espaco{
+            margin-bottom: 15px;
+        }
+
+        .espaco_t{
+            margin-top: 15px;
+        }
+
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }    
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+
+        <label class="quebra">Selecione uma cor:</label>
+        <input type="color" name="f_cor"  >
+
+        <label class="quebra espaco_t">Digite seu email:</label>
+        <input type="email" name="f_email" >
+
+        <input class="quebra espaco_t"  src="logo.jpg" type="image" name="f_enviar2">
+       
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+
+</body>
+</html>
+
+<!-- Input color, email, image:  color selecione uma cor e quando submete o form
+quando envia, envia o codigo hexadecimal da for que informamos.
+
+campo proprio para email: digiite seu email, vantagem em relacao o text, ambos tem o mesmo visual.
+o detalhe é possuir validacao de email, se tiver fora do padrao de emai ele nao
+aceita imcompleto. teqnue ser tratado pelo php que vai receber no banco de dados.
+
+image : submit substitui o form, ele é a inserção de uma imagem no form, só que ela é um bottao, selecione
+uma imagem logo src, tag. envia se proprio e da uma posicao x e y. substitiu o botao
+padrao do form. pode criar oque quer aplicar no botao. -->
