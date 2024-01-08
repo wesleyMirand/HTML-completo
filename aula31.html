@@ -9,14 +9,21 @@
         form{border: 1px solid #000;
              padding: 10px;
              border-radius: 15px;
-             background-color: rgb(231, 231, 253);}
+             background-color: rgb(231, 231, 253);
+            }
+        #dv_btns{display: flex;}
     </style>
 </head>
 
 <body>
-    <form name="f_Cadastro" action="" method="" ><!--conteiner do form, contrui com dados, elementos, campos, so nao posso fazer um dentro do outro-->
+    <form name="f_Cadastro" action="#" method="get" ><!--conteiner do form, contrui com dados, elementos, campos, so nao posso fazer um dentro do outro, O GET ENVIA As informaçoes pela url-->
         <label >Nome:</label><!--representa legenda, display inline nao passa para baixo, filhos fraseado-->
-        <input type="text" name="f_nome"><!--input também é inline!Fraseado interativo porque aperto escrevo algo, não tem filhos!-->
+        <input type="text" name="f_nome" ><!--input também é inline!Fraseado interativo porque aperto escrevo algo, não tem filhos!-->
+        <div id="dv_btns" >
+        <input type="submit" name="f_btn_enviar" value="Gravar"> <!--SUbmit envia os dados prenchido , para action pagina especifica exemplo PHP guarda no banco de dados-->
+        <input type="reset" name="f_btn_limpar" value="Limpar"> <!--RESET limpa os formularios depois de prenchido-->
+        <input type="button" name="f_btn_nada" value="Nada"> <!--Nao tem comportamento definido criar script para ele-->
+        </div>
     </form>
 </body>
 </html>
@@ -27,4 +34,12 @@
     method: Get url ou Post internament , interno http c
     name: nome do form
     novalidade: desabilita a validação pelo browser
-    target: como a pagina sera aberta-->
+    target: como a pagina sera aberta
+
+FORM e SEUS ITENS: Submit, reset e button ambos são botaos diferentes
+corportamento pre definido
+
+Se for usar cadastro usar post por ter dados pessoais implicida e get para ser mais rapido com javascript php...
+
+
+-->
