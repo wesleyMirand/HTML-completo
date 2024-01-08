@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+
+        .espaco{
+            margin-bottom: 15px;
+        }
+
+        .espaco_t{
+            margin-top: 15px;
+        }
+
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+
+        label {
+               display: block;
+               font:1rem 'Fira Sans',
+               sans-serif;
+        }
+
+input,
+label {
+  margin: 0.4rem 0;
+}
+
+    
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+
+        <label class="quebra">Hora:</label>
+        <input type="time" name="f_hora" min="9:00" max="17:00" >
+
+        <label class="quebra espaco_t">Data:</label>
+        <input type="date" name="f_cadastro" min="2024-01-08" max="2024-02-24" >
+
+        <label class="quebra espaco_t">Data e Hora:</label>
+        <input type="datetime-local" name="f_data_hora">
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+    
+        <label for="meeting-time">Digite a data e hora :</label>
+
+       <input type="datetime-local" id="meeting-time" name="meeting-time" value="2024-06-12T19:30"min="2024-06-07T00:00"max="2024-06-14T00:00" />
+    
+    </form>
+    
+</body>
+</html>
+<!--  Tag Date, Time, datetime-local:
+time: elemento para HORA
+required: boolean campo obrigatorio
+Trata tudo no php
+ -->
