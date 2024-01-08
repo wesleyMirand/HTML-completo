@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;            
+        }
+            .rodape_final{
+                background-color: black;
+                color: aliceblue;
+                display: flex;
+                justify-content: space-around;
+            }
+            .art_rod{
+                border:1px solid #000;
+                width: 20.33%;
+                margin: 10px;
+            }
+            .img_rod{
+                width: inherit;
+            }
+    </style>
+</head>
+<body>
+
+    <div id = "header">
+        <h1>Cabecalho</h1>
+    </div> <!--seção de principal-->
+
+    <article>
+        <p>Corpo da pagina</p>
+        <footer>
+            <a href="https://www.youtube.com/watch?v=Xbo67DvwB8A&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=30">SITE</a>
+        </footer>
+    </article>
+
+    <footer class="rodape_final"><!--Parte do RODAPE,  conteudo mais complexo, pode por oque quiser-->
+        <article class="art_rod">
+            <img src="logo.jpg" class="img_rod">
+        </article>
+        
+        <article class="art_rod">
+            <p>HTML curso para se torna profissional em web</p>
+        </article>
+
+        <article class="art_rod">
+            <p>www.youtube.com/meninohtml</p>
+        </article>
+
+
+    </footer>
+</body>
+</html>
+<!--TAG FOOTER(rodape):Tag de seção, com article, inside... 
+propria para rodape, nao so da pagina como o do contexto que ela se encontra
+pode ter varios article com varios rodape-->
