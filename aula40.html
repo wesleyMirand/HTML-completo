@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+
+        .espaco{
+            margin-bottom: 15px;
+        }
+
+        .espaco_t{
+            margin-top: 15px;
+        }
+
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }    
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+
+        <input list="f_transporte" name="f_cor">
+        <datalist id="f_cores">
+            <option value="red">vermelho</option>
+            <option value="green">verde</option>
+            <option value="blue">azul</option>
+            <option value="yellow">amarelo</option>
+            <option value="white">branco</option>
+            <option value="beige">bege</option>
+        </datalist>
+     
+        <datalist id="f_transporte">
+            <option value="01">carro</option>
+            <option value="02">moto</option>
+            <option value="03">aviao</option>
+            <option value="04">navio</option>
+        </datalist>
+
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+
+</body>
+</html>
+
+<!--
+trabalham em conjunto caixa de listagem completa com mais recursos
+
+   LIST : para lista funcionar temos que criar o datalist. a list é generica posso mudar sempre os elemento que
+   quero mostrar, Basta mudar o ID. Posso criar 3 datalist cada um com conjutos de elemento e indicar no LIST qual
+   datalist quero trabalhar.
+
+   Filtragem é melhor que o selection.
+   
+   DATALIST:preciso indicar um id no data list e no list o id que quero trabalhar no caso"LIST".
+-->
