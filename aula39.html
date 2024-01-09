@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+
+        .espaco{
+            margin-bottom: 15px;
+        }
+
+        .espaco_t{
+            margin-top: 15px;
+        }
+
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }    
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+
+        <select name="f_cor" >
+            <option value="P">Preto</option>
+            <option value="A">Pardo</option>
+            <option value="B">Branco</option>
+
+        </select>
+            <select name="f_genero" >
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="T">Trangenero</option>
+            <option value="G">Gay</option>
+            <option value="L">Lesbica</option>
+
+        </select>
+
+        <select name="Curriculo ou Filiação" id="">
+            <option value="Cv123">Curriculo</option>
+            <option value="F1si">Filiação</option>
+        </select>
+      
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+
+</body>
+</html>
+
+<!--
+
+    Select: Formulario, permite selecionar funcoes, todos elementos sao options, multiple permite selecionar variso opcao,
+    talvez no php banco de dados o tamanho possa ser menor por exemplo quero quarda m para masculino e para feminino , 
+    é muito com comum em banco de dados, para evitar ter um campo grande.
+    Ai que vel o VALUE para mostrar quando essa opcao for selecionada, supor que no banco de dados tenha dado o tamanho 1 
+    vou selecionar o M masculino, e f feminino. Assim quando for selecionado vai passar so a informação m .
+    Podemos colocar tambem descricao do produto com o codigo tipo empressora 3d e na  passagem ip3d7 no banco de dados vai esta assim.
+
+    size: quantos elementos serao visiveis
+
+    Option  
+-->
