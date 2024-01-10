@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+
+        .espaco{
+            margin-bottom: 15px;
+        }
+
+        .espaco_t{
+            margin-top: 15px;
+        }
+
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }    
+    </style>
+</head>
+<body>
+    <form name="f_cadastro" action="#" method="get">
+
+        <textarea name="f_comentario" cols="50" rows="10">HTML CURSO</textarea>
+        <br>
+
+
+       
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
+
+    </form>
+
+</body>
+</html>
+
+<!--textarea : area texto, semelhant ao text, multilinha , filhos texto
+    cols: 50 caracteres em cada coluna, rows:10linha de tamanho visual
+    maxlenght: 5o carac de maximo
+    cols: 10 linhas de comando visual
+    autofocus: boolean
+    filhos text pq tem formato de abertura e finalizacao
+
+    <textarea name="f_comentario" cols="50" rows="10">HTML CURSO</textarea>:
+    html curso ja vai direto pro campo
+    não posso usar a <P> porque é so texto ele nao entende tag a nao ser text 
+
+ -->
