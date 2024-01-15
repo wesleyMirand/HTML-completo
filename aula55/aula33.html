@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        .quebra{
+            display: block;
+        }
+
+        .espaco{
+            margin-bottom: 15px;
+        }
+
+        .espaco_t{
+            margin-top: 15px;
+        }
+
+        form{
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <form name="f_Cadastro"  action="#" method="get">
+        <label> Username: </label>
+        <input class="espaco quebra" type="text" name="f_username" maxlength="20" size="25">
+        <label> Senha: </label>
+        <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15">
+        <label class="quebra"> Esportes Favorito: </label>
+        <input type="checkbox" name="f_fut">Futebol
+        <input type="checkbox" name="f_bas">Basquete
+        <input type="checkbox" name="f_nat">Natacao
+        <label class="quebra espaco"> Possui carro ?</label>
+        <input type="radio" name="f_carro" value="s" checked>Sim
+        <input type="radio" name="f_carro" value="n">Nao 
+
+
+        <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar">
+    </form>
+</body>
+</html>
+<!--PASSWORD, CHECKBOX,RADIO 
+    password elemento de senha, oque digite nao mostra
+     o checkboc e radio elemento de seleção
+    check e o quadradinho varias seleção e radio elemento de seleçao so uma opcao
+    maxlengh: numero de caracter
+    size: tamanho do campo 
+    checkbox: marca e desmarca
+
+    <input type="checkbox" name="f_nat" value="Natacao">Natacao (Nao precisa usar o value)
+    quem precisa saber o value é o php, ele vai tratar la,
+     vai tipo foi enviado ? foi qual o valor dele? on foi marcado! servside pelo php 
+    
+
+    <input type="radio" name="f_carro" value="s" checked>Sim
+        <input type="radio" name="f_carro" value="n">Nao 
+     segredo pros dois radio se alinharem é usar o mesmo nome f_carro
+
+     checked cheboc marca todas 
+    -->

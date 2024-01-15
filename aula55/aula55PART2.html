@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CURSO</title>
+    <style>
+        iframe{
+            width: 500px;
+            height: 300px;
+            border:none;
+        }
+        #banner{
+            width: 900px;
+            height: 300px;
+            border: none ;
+
+        }
+    </style>
+    <script>
+        function trocaBanner(){
+            var num=Math.floor(Math.random()*3);
+            var imgs=['b1.jpg', 'b2.jpg', 'b3.jpg'];
+            document.getElementById("banner").src= imgs[num];
+
+        }
+        function iniciar(){
+             trocaBanner();
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+</head>
+<body>
+
+    <iframe src="" name="banner" id="banner"></iframe>
+    <br>
+
+    <a href="aula33.html" target="main">Aula33</a>
+     <br>
+    <a href="http://www.cfbcursos.com.br" target="main">Site Canal</a>
+     <br>
+    <a href="aula35.html" target="main">Data</a>
+    <br>
+
+    <iframe src="" name="main" ></iframe>
+</body>
+</html>
+
+
+<!-- So tirar o src não vai abrir nenhuma pagina como padrao, Utilizar javascript
+    carregar imagens no banner, podia ser div, mais vamos usar iframe, pode trocar imagens
+    por arquivos tambem.
+
+    Vamos carregar imagens no banner, a cada vez uma imagem diferente no banner.
+    script para a janela, window.addeventlistener("load", iniciar) Funcao inicar para quando a pagina inicar.
+    Vamos chamar a funcao trocar banner sempre que iniciar a pagina.
+    Tudo que realizar na pagina quando iniciar e usa na funcao iniciar.
+
+    var num=Math.floor(Math.random()*3); vai na biblioteca matematica chamar a random 3 vezes.
+
+     var imgs=[''] por no array as imagens! Com nome nas imagens
+
+     src= imgs[num]; sera sorteudo dentro de num uma imagem. Cada vez que carrega a pagin
+     chama  funcao iniciar que chama a troca banner que sorteia a imagem, cada elemento no banner chamo
+     a imagem e a posição.
+-->
