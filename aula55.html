@@ -17,8 +17,14 @@
         }
     </style>
     <script>
+        function trocaBanner(){
+            var num=Math.floor(Math.random()*3);
+            var imgs=['']
+            document.getElementById("banner").src=;
+
+        }
         function iniciar(){
-            
+             trocaBanner();
         }
         window.addEventListener("load", iniciar);
     </script>
@@ -28,15 +34,24 @@
     <iframe src="" name="banner" id="banner"></iframe>
 
     <a href="aula33.html" target="main">Aula33</a>
+
     <a href="http://www.cfbcursos.com.br" target="main">Site Canal</a>
-    <a href="http://www.google.com" target="main">W3</a>
-    
-    <iframe src="aula33.html" ></iframe>
-    <iframe src="aula35.html" ></iframe>
-    <iframe src="aula36.html" ></iframe>
+
+    <a href="aula35.html" target="main">Data</a>
+    <br>
+
     <iframe src="https:www.cfbcursos.com.br" name="main" ></iframe>
 </body>
 </html>
 
 
-<!-- Tag 1Parte iframe: -->
+<!-- Tag 1Parte iframe: usando script do javascript troca o src do elemento banner,
+vai receber inline. Copia da primeira aula de iframe, sobre links,  criar alguns com a
+tag a, href referencia do arquivo aberto pelo link.
+Criar alguns links e redirecionar abertura da pagina para o iframe na mesma janela!
+
+redireionar dentro do iframe:  propridade name: main e puxar ele com target:name
+1 iframe que carrega a pagina e um link que chama a aula 33 no iframe.
+
+Posso criar quantos quiser e redirecionar, posso ter quantos iframe que quiser,
+-->
