@@ -3,69 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curso html</title>
+    <title>Curso HTML</title>
+
+    <!-- Estilos CSS -->
     <style type="text/css">
-        nav{
-            background-color: chocolate;
-            padding: 10px;
-        }
-        nav a{
-            text-decoration: none;
-            color: #fff;
+        /* Estilo para o corpo da página */
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: black; /* Define a cor de fundo para preto */
+            color: #fff; /* Define a cor do texto para branco */
         }
 
-        .thumb1{
+        /* Estilo para a barra de navegação */
+        nav {
+            background-color: chocolate;
+            padding: 10px;
+            z-index: 1;
+            position: relative;
+        }
+
+        /* Estilo para os links na barra de navegação */
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 15px;
+        }
+
+        /* Estilos para as classes thumb1, thumb2, thumb3 */
+        .thumb1, .thumb2, .thumb3 {
             color: rgba(52, 12, 145, 0.527);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .thumb2{
-            color: #0f0;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .thumb3{
-            color: rgb(229, 255, 0);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        /* Estilo para o iframe */
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
         }
 
-                iframe{
-            width: 500px;
-            height: 300px;
-            border:none;
-        }
-        #banner{
-            width: 500px;
+        /* Estilo para o banner */
+        #banner {
+            width: 100%;
             height: 100px;
-            border:none;
+            border: none;
+            position: relative;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        /* Estilo para as imagens de fundo do banner */
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0; /* Torna as imagens totalmente transparentes */
+        }
+
+        /* Estilo para os links dentro do banner */
+        #banner a {
+            color: #fff;
         }
     </style>
-    <script>
-        function trocaBanner(){
-            var num=Math.floor(Math.random()*3);
-            var imgs=['']
-            document.getElementById("banner").src=;
 
+    <!-- Script JavaScript -->
+    <script>
+        // Função para trocar a imagem de fundo do banner
+        function trocaBanner() {
+            var num = Math.floor(Math.random() * 3);
+            var imgs = ['b1.jpg', 'b2.jpg', 'b3.jpg'];
+            document.getElementById("banner").style.backgroundImage = 'url(' + imgs[num] + ')';
         }
-        function iniciar(){
-             trocaBanner();
+
+        // Função para iniciar a troca de banner ao carregar a página
+        function iniciar() {
+            trocaBanner();
         }
+
+        // Evento de carregamento da página
         window.addEventListener("load", iniciar);
     </script>
-    </style>
 </head>
 <body>
+    <!-- Barra de navegação -->
     <nav>
         <a class="thumb1" href="https://www.youtube.com/watch?v=XOlpzrYc4gA&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=58" target="_blank">Curso Aula 58</a>
         <a class="thumb2" href="https://www.cfbcursos.com.br" target="_blank">Curso HTML</a>
-        <a class="thumb3" href="https://www.github.com/wesleyMirand/Portugol" target="_blank">Arquivos</a>
+        <a class="thumb3" href="https://github.com/wesleyMirand/HTML-completo" target="_blank">Arquivos</a>
     </nav>
 
-    <iframe src="" name="banner" id="banner"></iframe>
-    <a href="aula33.html" target="main">Aula33</a>
-    <a href="http://www.cfbcursos.com.br" target="main">Site Canal</a>
-    <a href="aula35.html" target="main">Data</a>
+    <!-- Banner -->
+    <div id="banner">
+        <!-- Imagem de fundo do banner -->
+        <img class="bg-image" src="" alt="">
+
+        <!-- Links dentro do banner -->
+        <a href="aula33.html" target="main" style="color: #fff;">Aula33</a>
+        <a href="http://www.cfbcursos.com.br" target="main" style="color: #fff;">Site Canal</a>
+        <a href="aula35.html" target="main" style="color: #fff;">Data</a>
+    </div>
+
     <br>
-    <iframe src="https:www.cfbcursos.com.br" name="main" ></iframe>
-    
+
+    <!-- Iframe principal -->
+    <iframe src="ApresentaçãoSite.m4a" name="main"></iframe>
 </body>
 </html>
 
