@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .thumb1{
+            background-color: rgb(58, 226, 43);
+        }
+
+        .thumb2{
+            background-color: aqua;
+        }
+    </style>
 </head>
 <body>
 
     <form oninput="res.value= parseInt(a.value) + parseInt(b.value)">
-        <input type"range" id="a" value="50">100
+        <input class="thumb1" type"range" id="a" value="50">100
         <p>+</p>
-        <input type="text" id="b" value="0">
+        <input class="thumb2" type="text" id="b" value="0">
         <p>=</p>
-        <output name="res" for="a b" ></output>
+        <output class="thumb2" name="res" for="a b" ></output>
 
     </form>
     
