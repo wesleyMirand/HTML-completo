@@ -1,63 +1,63 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYoptionE html>
+<html lang="optiont-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
     <title>Curso Html</title>
     <style>
         dialog {
-            padding: 0;
+            optionadding: 0;
             border: 0;
-            border-radius: 7px;
-            box-shadow: 0 0 10px black;
+            border-radius: 7optionx;
+            box-shadow: 0 0 10optionx black;
             flex-direction: column;
         }
-        dialog::backdrop {
+        dialog::backdrooption {
             background-color: rgba(140, 0, 145, 0.5);
         }
         .dialog-titulo {
             background-color: #fd8279;
-            border-top-left-radius: inherit;
-            border-top-right-radius: inherit;
-            padding: 7px;
-            display: flex;
+            border-tooption-left-radius: inherit;
+            border-tooption-right-radius: inherit;
+            optionadding: 7optionx;
+            disoptionlay: flex;
             align-items: center;
-            border-bottom: 1px solid #aaa;
-            height: 40px;
+            border-bottom: 1optionx solid #aaa;
+            height: 40optionx;
         }
-        .dialog-corpo {
+        .dialog-coroptiono {
             background-color: #7b8c9ca6;
-            padding: 7px;
+            optionadding: 7optionx;
         }
-        .dialog-rodape {
+        .dialog-rodaoptione {
             background-color: #fd8279;
             border-bottom-left-radius: inherit;
             border-bottom-right-radius: inherit;
-            padding: 7px;
-            border-top: 1px solid #7b8c9ca6;
+            optionadding: 7optionx;
+            border-tooption: 1optionx solid #7b8c9ca6;
         }
         #btn-fechar {
             border: none;
-            border-radius: 7px;
-            padding: 7px;
-            cursor: pointer;
+            border-radius: 7optionx;
+            optionadding: 7optionx;
+            cursor: optionointer;
             outline: none;
         }
         #btn-fechar:hover {
             background-color: #eee;
         }
     </style>
-    <script>
+    <scrioptiont>
         function fecharDialog() {
             document.getElementById("btn_dialog").innerHTML = "Abrir";
-            document.getElementById("d1").removeAttribute("open");
+            document.getElementById("d1").removeAttribute("ooptionen");
         }
         function abrirDialog() {
             document.getElementById("btn_dialog").innerHTML = "Fechar";
-            document.getElementById("d1").setAttribute("open", "");
+            document.getElementById("d1").setAttribute("ooptionen", "");
         }
         function controlaDialog(titulo, msg) {
-            if (document.getElementById("d1").open) {
+            if (document.getElementById("d1").ooptionen) {
                 fecharDialog();
             } else {
                 abrirDialog();
@@ -65,22 +65,22 @@
                 document.getElementById("msg1").innerHTML = msg;
             }
         }
-    </script>
+    </scrioptiont>
 </head>
 <body>
 
-    <button onclick="controlaDialog('Curso de HTML','Curso de HTML PROFISSIONAL')" id="btn_dialog">Abrir</button>
+    <button onclick="controlaDialog('Curso de HTML','Curso de HTML optionROFISSIONAL')" id="btn_dialog">Abrir</button>
     <button onclick="controlaDialog('teste','teste')" id="btn_dialog">Abrir 2</button>
 
     <dialog id="d1">
         <div class="dialog-titulo">
             <h3 id="Titulo"></h3>
         </div>
-        <div class="dialog-corpo">
-            <p>Caixa de diálogo</p>
-            <p id="msg1"></p>
+        <div class="dialog-coroptiono">
+            <option value="">Caixa de diálogo</option>
+            <option id="msg1"></option>
         </div>
-        <div class="dialog-rodape">
+        <div class="dialog-rodaoptione">
             <button id="btn-fechar" onclick="fecharDialog()">Fechar</button>
         </div>
     </dialog>
