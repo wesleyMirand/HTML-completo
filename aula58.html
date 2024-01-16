@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>curso html</title>
+    <style type="text/css">
+        nav{
+            background-color: chocolate;
+            padding: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .thumb1{
+            color: rgba(52, 12, 145, 0.527);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .thumb2{
+            color: #0f0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .thumb3{
+            color: rgb(229, 255, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+                iframe{
+            width: 500px;
+            height: 300px;
+            border:none;
+        }
+        #banner{
+            width: 500px;
+            height: 100px;
+            border:none;
+        }
+    </style>
+    <script>
+        function trocaBanner(){
+            var num=Math.floor(Math.random()*3);
+            var imgs=['']
+            document.getElementById("banner").src=;
+
+        }
+        function iniciar(){
+             trocaBanner();
+        }
+        window.addEventListener("load", iniciar);
+    </script>
+    </style>
+</head>
+<body>
+    <nav>
+        <a class="thumb1" href="https://www.youtube.com/watch?v=XOlpzrYc4gA&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=58" target="_blank">Curso Aula 58</a>
+        <a class="thumb2" href="https://www.cfbcursos.com.br" target="_blank">Curso HTML</a>
+        <a class="thumb3" href="https://www.github.com/wesleyMirand/Portugol" target="_blank">Arquivos</a>
+    </nav>
+
+    <iframe src="" name="banner" id="banner"></iframe>
+    <a href="aula33.html" target="main">Aula33</a>
+    <a href="http://www.cfbcursos.com.br" target="main">Site Canal</a>
+    <a href="aula35.html" target="main">Data</a>
+    <br>
+    <iframe src="https:www.cfbcursos.com.br" name="main" ></iframe>
+    
+</body>
+</html>
+
+<!-- Tag nave: Representa sessao de navegacao links botao, id navegacao, menu, leva
+pra outro local da pagina, nao e recomendavel usar texto dentro da nave, nao fraseada
+conteudo de  fluxo.
+target:_blank leva a pagina até a outra -->
