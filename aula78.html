@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+    <style>
+        thead{ color: rgb(60, 117, 3); background-color: #eee;}
+        tbody{ color: blue;}
+        tfoot{ color: brown;}
+        table, th, td{ border: 1px solid #000;}
+        table{border-collapse: collapse;} /* tira espaçamento das borda */
+        .especial{ border: 2px  solid #000;}
+        .teste{ border: 3px solid #f00; }
+    </style>
+</head>
+<body>
+    
+    <table>
+
+        <thead>
+            <tr>
+                <th>Fabricante</th>
+                <th>Modelo</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr class="teste">
+                <td>HONDA</td>
+                <td>CIVIC</td>
+                <td>R$70.000</td>
+            </tr>
+
+            <tr>
+                <td class="especial">FORD</td>
+                <td>FOCUS</td>
+                <td>R$65.000</td>
+            
+            </tr>
+
+            <tr>
+                <td>FORD</td>
+                <td>ranger</td>
+                <td>R$105.000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+              <tr>
+                <td colspan="4">Tabela de precos 2019</td>
+              </tr>
+        </tfoot>
+        
+    </table>
+
+</body>
+</html>
+
+<!-- Formatacao tabela com css:  -->
