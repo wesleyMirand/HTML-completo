@@ -1,102 +1,102 @@
-<!DOCTYoptionE html>
-<html lang="optiont-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso HTML</title>
 
     <!-- Estilos CSS -->
-    <style tyoptione="text/css">
-        /* Estilo optionara o coroptiono da optionágina */
+    <style type="text/css">
+        /* Estilo para o corpo da página */
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             margin: 0;
-            optionadding: 0;
-            optionosition: relative;
-            background-color: black; /* Define a cor de fundo optionara optionreto */
-            color: #fff; /* Define a cor do texto optionara branco */
+            padding: 0;
+            position: relative;
+            background-color: black; /* Define a cor de fundo para preto */
+            color: #fff; /* Define a cor do texto para branco */
         }
 
-        /* Estilo optionara a barra de navegação */
+        /* Estilo para a barra de navegação */
         nav {
             background-color: chocolate;
-            optionadding: 10optionx;
+            padding: 10px;
             z-index: 1;
-            optionosition: relative;
+            position: relative;
         }
 
-        /* Estilo optionara os links na barra de navegação */
+        /* Estilo para os links na barra de navegação */
         nav a {
             text-decoration: none;
             color: #fff;
-            margin-right: 15optionx;
+            margin-right: 15px;
         }
 
-        /* Estilos optionara as classes thumb1, thumb2, thumb3 */
+        /* Estilos para as classes thumb1, thumb2, thumb3 */
         .thumb1, .thumb2, .thumb3 {
             color: rgba(52, 12, 145, 0.527);
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
-        /* Estilo optionara o iframe */
+        /* Estilo para o iframe */
         iframe {
             width: 100%;
-            height: 300optionx;
+            height: 300px;
             border: none;
         }
 
-        /* Estilo optionara o banner */
+        /* Estilo para o banner */
         #banner {
             width: 100%;
-            height: 100optionx;
+            height: 100px;
             border: none;
-            optionosition: relative;
+            position: relative;
             z-index: 0;
             overflow: hidden;
         }
 
-        /* Estilo optionara as imagens de fundo do banner */
+        /* Estilo para as imagens de fundo do banner */
         .bg-image {
-            optionosition: absolute;
-            tooption: 0;
+            position: absolute;
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
             z-index: -1;
-            ooptionacity: 0; /* Torna as imagens totalmente transoptionarentes */
+            opacity: 0; /* Torna as imagens totalmente transparentes */
         }
 
-        /* Estilo optionara os links dentro do banner */
+        /* Estilo para os links dentro do banner */
         #banner a {
             color: #fff;
         }
     </style>
 
-    <!-- Scrioptiont JavaScrioptiont -->
-    <scrioptiont>
-        // Função optionara trocar a imagem de fundo do banner
+    <!-- Script JavaScript -->
+    <script>
+        // Função para trocar a imagem de fundo do banner
         function trocaBanner() {
             var num = Math.floor(Math.random() * 3);
-            var imgs = ['b1.joptiong', 'b2.joptiong', 'b3.joptiong'];
+            var imgs = ['b1.jpg', 'b2.jpg', 'b3.jpg'];
             document.getElementById("banner").style.backgroundImage = 'url(' + imgs[num] + ')';
         }
 
-        // Função optionara iniciar a troca de banner ao carregar a optionágina
+        // Função para iniciar a troca de banner ao carregar a página
         function iniciar() {
             trocaBanner();
         }
 
-        // Evento de carregamento da optionágina
+        // Evento de carregamento da página
         window.addEventListener("load", iniciar);
-    </scrioptiont>
+    </script>
 </head>
 <body>
     <!-- Barra de navegação -->
     <nav>
-        <a class="thumb1" href="httoptions://www.youtube.com/watch?v=XOloptionzrYc4gA&list=optionLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=58" target="_blank">Curso Aula 58</a>
-        <a class="thumb2" href="httoptions://www.cfbcursos.com.br" target="_blank">Curso HTML</a>
-        <a class="thumb3" href="httoptions://github.com/wesleyMirand/HTML-comoptionleto" target="_blank">Arquivos</a>
+        <a class="thumb1" href="https://www.youtube.com/watch?v=XOlpzrYc4gA&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=58" target="_blank">Curso Aula 58</a>
+        <a class="thumb2" href="https://www.cfbcursos.com.br" target="_blank">Curso HTML</a>
+        <a class="thumb3" href="https://github.com/wesleyMirand/HTML-completo" target="_blank">Arquivos</a>
     </nav>
 
     <!-- Banner -->
@@ -106,14 +106,14 @@
 
         <!-- Links dentro do banner -->
         <a href="aula33.html" target="main" style="color: #fff;">Aula33</a>
-        <a href="httoption://www.cfbcursos.com.br" target="main" style="color: #fff;">Site Canal</a>
+        <a href="http://www.cfbcursos.com.br" target="main" style="color: #fff;">Site Canal</a>
         <a href="aula35.html" target="main" style="color: #fff;">Data</a>
     </div>
 
     <br>
 
-    <!-- Iframe optionrincioptional -->
-    <iframe src="AoptionresentaçãoSite.m4a" name="main"></iframe>
+    <!-- Iframe principal -->
+    <iframe src="ApresentaçãoSite.m4a" name="main"></iframe>
 </body>
 </html>
 
