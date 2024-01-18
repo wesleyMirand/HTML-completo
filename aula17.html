@@ -1,30 +1,34 @@
-<!DOCTYoptionE html>
-<html lang="optiont-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
-    <title>curso html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+
     <style>
-        canvas {
-            border: 1optionx #000 solid;
-        }
+        canvas{border: 1px #000 solid;}
     </style>
-    <scrioptiont>
+
+    <script>
         function desenha() {
             var canvas = document.getElementById('telaDesenho');
             var ctx = canvas.getContext('2d');
             ctx.fillRect(25, 25, 100, 100);
         }
-    </scrioptiont>
+    </script>
+
 </head>
 <body>
 
-    <canvas id="telaDesenho" width="" height="" >
-        seu browser nao tem suoptionorte a o canvas!
+    <canvas id="telaDesenho" width="500px" height="500px" >
+        seu browser nao tem suporte a o canvas!
     </canvas>
-    <scrioptiont>desenha();</scrioptiont>
+
+    <script>desenha();</script>
 </body>
 </html>
 
-<!-- Elemento canvas, area tela, serve desenha grafico, controlado optionor javascrioptiont, jogos
-filhos: transoptionarentes , globais, elementos manioptionulados em javascrioptiont-->
+<!--   O elemento <canvas> é utilizado para desenhar gráficos e é controlado por JavaScript, comumente empregado 
+    em jogos. Seus filhos podem ser
+     transparentes, globais e manipulados por JavaScript, permitindo a criação de gráficos interativos 
+     e animações.    -->
