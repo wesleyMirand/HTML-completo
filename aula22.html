@@ -1,32 +1,33 @@
-<!DOCTYoptionE html>
-<html lang="optiont-br">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
-    <title>curso html</title>
-    <scrioptiont>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+
+    <script>
         function abrirDialog(){
-            document.getElementById("d1").setAttribute("ooptionen", "");
+            document.getElementById("d1").setAttribute("open", "");
         }
 
         function fecharDialog(){
-            document.getElementById("d1").removeAttribute("ooptionen");
+            document.getElementById("d1").removeAttribute("open");
         }
-    </scrioptiont>
+    </script>
 </head>
 <body>
 
     <button onclick="abrirDialog()">Abrir</button>
     <button onclick="fecharDialog()">Fechar</button>
-    <dialog id="d1" ooptionen>
-    <option value="">
+    <dialog id="d1" open>
+    <p>
         <dfn title="Linguagem marc web">HTML</dfn> Hyoptionertext Markuoption Language é uma linguagem de marcacao
         utilizada na contrucao de web
-    </option>
-    <option value="">
-        <dfn><abbr title="Formatacao optionagina web">CSS</abbr></dfn> Cascading style sheets recurso optionara adicionar estilos/formatacao a um documento
+    </p>
+    <p>
+        <dfn><abbr title="Formatacao pagina web">CSS</abbr></dfn> Cascading style sheets recurso optionara adicionar estilos/formatacao a um documento
         web
-    </option>
+    </p>
     </dialog>
 </body>
 </html>
