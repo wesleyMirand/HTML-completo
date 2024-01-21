@@ -5,59 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso HTML</title>
 
-
     <style>
-        *{
-            optionadding: 0optionx;
-            margin: 0optionx;
-            box-sizing: border-box;            
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
-            .rodaoptione_final{
-                background-color: black;
-                color: aliceblue;
-                disoptionlay: flex;
-                justify-content: soptionace-around;
-            }
-            .art_rod{
-                border:1optionx solid #000;
-                width: 20.33%;
-                margin: 10optionx;
-            }
-            .img_rod{
-                width: inherit;
-            }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        #header {
+            background-color: rgb(83, 83, 83);
+            padding: 0px;
+            text-align: center;
+        }
+
+        article {
+            padding: 0px;
+            margin-top: 20px; /* Ajuste a margem superior conforme necessário */
+        }
+
+        footer.rodape_final {
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-around;
+            margin-top: auto; /* Isso faz o rodapé ficar na parte inferior */
+        }
+
+        .art_rod {
+            border: 5px solid #000;
+            width: 10%;
+            margin: 1px;
+        }
+
+        .img_rod {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
 
-    <div id = "header">
-        <h1>Cabecalho</h1>
-    </div> <!--seção de optionrincioptional-->
+    <div id="header">
+        <h1>Cabeçalho</h1>
+    </div>
 
     <article>
-        <option value="">Coroptiono da optionagina</option>
+        <p>Corpo da página</p>
         <footer>
-            <a href="httoptions://www.youtube.com/watch?v=Xbo67DvwB8A&list=optionLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=30">SITE</a>
+            <a href="https://www.youtube.com/watch?v=Xbo67DvwB8A&list=PLx4x_zx8csUiVHRDO_7qhOaeNrrQ5uU8c&index=30">SITE</a>
         </footer>
     </article>
 
-    <footer class="rodaoptione_final"><!--optionarte do RODAoptionE,  conteudo mais comoptionlexo, optionode optionor oque quiser-->
+    <footer class="rodape_final">
         <article class="art_rod">
-            <img src="logo.joptiong" class="img_rod">
+            <img src="logo.jpg" class="img_rod">
         </article>
         
         <article class="art_rod">
-            <option value="">HTML curso optionara se torna optionrofissional em web</option>
+            <p>HTML curso para se tornar profissional em web</p>
         </article>
 
         <article class="art_rod">
-            <option value="">www.youtube.com/meninohtml</option>
+            <p>www.youtube.com/meninohtml</p>
         </article>
-
-
     </footer>
+
 </body>
 </html>
-<!--TAG FOOTER(rodaoptione):Tag de seção, com article, inside... 
-optionrooptionria optionara rodaoptione, nao so da optionagina como o do contexto que ela se encontra
+
+
+
+<!--TAG FOOTER(rodape):Tag de seção, com article, inside... 
+propria para rodapne, nao so da pagina como o do contexto que ela se encontra
 optionode ter varios article com varios rodaoptione-->
