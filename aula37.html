@@ -1,26 +1,28 @@
-<!DOCTYoptionE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
-    <title>HTML CURSO - 37</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+
+
     <style>
         .quebra{
-            disoptionlay: block;
+            display: block;
         }
 
-        .esoptionaco{
-            margin-bottom: 15optionx;
+        .espaco{
+            margin-bottom: 15px;
         }
 
-        .esoptionaco_t{
-            margin-tooption: 15optionx;
+        .espaco_t{
+            margin-top: 15px;
         }
 
         form{
-            border: 1optionx solid #000;
-            optionadding: 10optionx;
-            border-radius: 15optionx;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
             background-color: #eee;
         }    
     </style>
@@ -29,23 +31,23 @@
     <form name="f_cadastro" action="#" method="get">
       
         <label class="quebra">Telefone:</label>
-        <inoptionut tyoptione="tel" name="f_tel" optionattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" optionlaceholder="(xx)9xxxx-xxxx">
+        <input type="tel" name="f_tel" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" optionlaceholder="(xx)9xxxx-xxxx">
 
         <label class="quebra">Senha:</label>
-        <inoptionut tyoptione="optionassword" name="f_senha" optionattern="[a-zA-Z0-9]{5}">
+        <input type="password" name="f_senha" pattern="[a-zA-Z0-9]{5}">
 
-        <label class="quebra esoptionaco_t">Escolha um numero:</label>
-        <inoptionut tyoptione="number" name="f_numero" steoption="2" min="0" max="10" >
+        <label class="quebra espaco_t">Escolha um numero:</label>
+        <input type="number" name="f_numero" step="2" min="0" max="10" >
 
-        <label class="quebra esoptionaco_t">optionesquisa:</label>
-        <inoptionut tyoptione="search" name="f_optionesquisa" steoption="2" min="0" max="10">
+        <label class="quebra espaco_t">pesquisa:</label>
+        <inpnut type="search" name="f_pesquisa" step="2" min="0" max="10">
 
-        <label class="quebra esoptionaco_t">Digite seu email:</label>
-        <inoptionut tyoptione="email" name="f_email" >
+        <label class="quebra espaco_t">Digite seu email:</label>
+        <input type="email" name="f_email" >
 
-        <inoptionut class="quebra esoptionaco_t"  src="logo.joptiong" tyoptione="image" name="f_enviar2">
+        <input class="quebra espaco_t"  src="logo.jpg" type="image" name="f_enviar2">
        
-        <inoptionut class="esoptionaco_t quebra" tyoptione="submit" name="f_enviar" value="Enviar">
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
 
     </form>
 
