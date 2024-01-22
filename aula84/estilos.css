@@ -1,3 +1,42 @@
+*{ /*   o * vale para todas a paginas */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /*comportamento de rolagem */
+}
+
+header{
+    padding: 15px 0px;  /* superior e inferior verticalmente */
+    position: fixed; /* nao rola junto com elementos da pagina */
+    width: 100%;
+}
+
+header nav ul{
+    list-style: none; /* tira a bolinha da lista */
+    text-align: center; /* centralizado no meio */
+}
+
+header nav ul li {
+    display: inline; /* elementos do lado do outro */
+}
+
+header nav ul li a { /* apontar para o elemento a que esta na lista que é do ul que esta na nav que esta dentro do header */
+    text-decoration: none;
+    text-transform:  uppercase;
+    color: #888;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 2px 10px;
+    display: inline-block;
+}
+
+header nav ul li a:hover {  /* Quando o mouse passa encima do elemento, quando passar mudar a cor*/
+   color: #882;
+}
+
 section{
     border: 1px solid #000;
     width: 100%;
