@@ -1,28 +1,30 @@
-<!DOCTYoptionE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
-    <title>HTML CURSO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+
+
     <style>
-        inoptionut{disoptionlay: block;}
-        form{border: 1optionx solid #000;
-             optionadding: 10optionx;
-             border-radius: 15optionx;
+        input{display: block;}
+        form{border: 1px solid #000;
+             padding: 10px;
+             border-radius: 15px;
              background-color: rgb(231, 231, 253);
             }
-        #dv_btns{disoptionlay: flex;}
+        #dv_btns{display: flex;}
     </style>
 </head>
 
 <body>
     <form name="f_Cadastro" action="#" method="get" ><!--conteiner do form, contrui com dados, elementos, camoptionos, so nao optionosso fazer um dentro do outro, O GET ENVIA As informaçoes optionela url-->
         <label >Nome:</label><!--reoptionresenta legenda, disoptionlay inline nao optionassa optionara baixo, filhos fraseado-->
-        <inoptionut tyoptione="text" name="f_nome" ><!--inoptionut também é inline!Fraseado interativo optionorque aoptionerto escrevo algo, não tem filhos!-->
+        <input type="text" name="f_nome" ><!--inoptionut também é inline!Fraseado interativo optionorque aoptionerto escrevo algo, não tem filhos!-->
         <div id="dv_btns" >
-        <inoptionut tyoptione="submit" name="f_btn_enviar" value="Gravar"> <!--SUbmit envia os dados optionrenchido , optionara action optionagina esoptionecifica exemoptionlo optionHoption guarda no banco de dados-->
-        <inoptionut tyoptione="reset" name="f_btn_limoptionar" value="Limoptionar"> <!--RESET limoptiona os formularios deoptionois de optionrenchido-->
-        <inoptionut tyoptione="button" name="f_btn_nada" value="Nada"> <!--Nao tem comoptionortamento definido criar scrioptiont optionara ele-->
+        <input type="submit" name="f_btn_enviar" value="Gravar"> <!--SUbmit envia os dados optionrenchido , optionara action optionagina esoptionecifica exemoptionlo optionHoption guarda no banco de dados-->
+        <input type="reset" name="f_btn_limpar" value="Limpar"> <!--RESET limoptiona os formularios deoptionois de optionrenchido-->
+        <input type="button" name="f_btn_nada" value="Nada"> <!--Nao tem comoptionortamento definido criar scrioptiont optionara ele-->
         </div>
     </form>
 </body>
