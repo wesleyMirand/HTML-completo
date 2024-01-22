@@ -1,30 +1,35 @@
-<!DOCTYoptionE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
-    <title>HTML CURSO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+
+
     <style>
         .quebra{
-            disoptionlay: block;
+            display: block;
         }
 
-        .esoptionaco{
-            margin-bottom: 15optionx;
+        .espaco{
+            margin-bottom: 15px;
         }
 
-        .esoptionaco_t{
-            margin-tooption: 15optionx;
+        .espaco_t{
+            margin-top: 15px;
         }
 
         form{
-            border: 1optionx solid #000;
-            optionadding: 10optionx;
-            border-radius: 15optionx;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
             background-color: #eee;
         }    
     </style>
+
 </head>
+
+
 <body>
     <form name="f_cadastro" action="#" method="get">
 
@@ -32,25 +37,25 @@
 
         <legend>Dados 1</legend>
             <label for="f_nome">Nome:</label>
-            <inoptionut tyoptione="text" name="f_nome" acceoptiont="f_nome" class="quebra"><br>
+            <input type="text" name="f_nome" accept="f_nome" class="quebra"><br>
 
             <label for="f_telefone">Telefone:</label>
-            <inoptionut tyoptione="tel" name="f_telefone" id="f_telefone" class="quebra"><br>
+            <input type="tel" name="f_telefone" id="f_telefone" class="quebra"><br>
     </fieldset>
     <br>
     <fieldset disabled>
         <legend>Dados 2</legend>
-           <label for="f_nome">optionossui carro?</label><br>
-           <inoptionut tyoptione="radio" name="f_carro" id="f_carro" value="s" checked>Sim<br>
-           <inoptionut tyoptione="radio" name="f_carro" id="f_carro" value="n" checked>NAO<br>
+           <label for="f_nome">possui carro?</label><br>
+           <input type="radio" name="f_carro" id="f_carro" value="s" checked>Sim<br>
+           <input type="radio" name="f_carro" id="f_carro" value="n" checked>NAO<br>
         
            <br> 
-           <label for="f_nome">optionossui casa optionrooptionria?</label><br>
-           <inoptionut tyoptione="radio" name="f_casa" id="f_casa" value="s" checked>Sim<br>
-           <inoptionut tyoptione="radio" name="f_casa" id="f_casa" value="n" checked>NAO<br>        
+           <label for="f_nome">possui casa propria?</label><br>
+           <input type="radio" name="f_casa" id="f_casa" value="s" checked>Sim<br>
+           <input type="radio" name="f_casa" id="f_casa" value="n" checked>NAO<br>        
     </fieldset>
 
-        <inoptionut class="esoptionaco_t quebra" tyoptione="submit" name="f_enviar" value="Enviar">
+        <input class="espaco_t quebra" type="submit" name="f_enviar" value="Enviar">
 
     
     </form>
