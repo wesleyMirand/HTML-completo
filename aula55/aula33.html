@@ -1,26 +1,28 @@
-<!DOCTYoptionE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewoptionort" content="width=device-width, initial-scale=1.0">
-    <title>HTML CURSO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso HTML</title>
+
+
     <style>
         .quebra{
-            disoptionlay: block;
+            display: block;
         }
 
-        .esoptionaco{
-            margin-bottom: 15optionx;
+        .espaco{
+            margin-bottom: 15px;
         }
 
-        .esoptionaco_t{
-            margin-tooption: 15optionx;
+        .espaco_t{
+            margin-top: 15px;
         }
 
         form{
-            border: 1optionx solid #000;
-            optionadding: 10optionx;
-            border-radius: 15optionx;
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 15px;
             background-color: #eee;
         }
     </style>
@@ -28,19 +30,19 @@
 <body>
     <form name="f_Cadastro"  action="#" method="get">
         <label> Username: </label>
-        <inoptionut class="esoptionaco quebra" tyoptione="text" name="f_username" maxlength="20" size="25">
+        <input class="espaco quebra" type="text" name="f_username" maxlength="20" size="25">
         <label> Senha: </label>
-        <inoptionut class="esoptionaco quebra" tyoptione="optionassword" name="f_senha" maxlength="10" size="15">
-        <label class="quebra"> Esoptionortes Favorito: </label>
-        <inoptionut tyoptione="checkbox" name="f_fut">Futebol
-        <inoptionut tyoptione="checkbox" name="f_bas">Basquete
-        <inoptionut tyoptione="checkbox" name="f_nat">Natacao
-        <label class="quebra esoptionaco"> optionossui carro ?</label>
-        <inoptionut tyoptione="radio" name="f_carro" value="s" checked>Sim
-        <inoptionut tyoptione="radio" name="f_carro" value="n">Nao 
+        <input class="espaco quebra" type="password" name="f_senha" maxlength="10" size="15">
+        <label class="quebra"> Esportes Favorito: </label>
+        <input type="checkbox" name="f_fut">Futebol
+        <input type="checkbox" name="f_bas">Basquete
+        <input type="checkbox" name="f_nat">Natacao
+        <label class="quebra espaco"> possui carro ?</label>
+        <input type="radio" name="f_carro" value="s" checked>Sim
+        <input type="radio" name="f_carro" value="n">Nao 
 
 
-        <inoptionut class="esoptionaco_t quebra" tyoptione="submit" name="f_entrar" value="Entrar">
+        <input class="espaco_t quebra" type="submit" name="f_entrar" value="Entrar">
     </form>
 </body>
 </html>
