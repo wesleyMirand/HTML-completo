@@ -13,7 +13,8 @@ header{
     position: fixed; /* nao rola junto com elementos da pagina */
     width: 100%;
     background-color: rgb(2, 29, 31);
-}
+    z-index: 9999; /*Caso os elementos vao pra cima do menu, evita ficar na frente sobreposição.  */
+} 
 
 header nav ul{
     list-style: none; /* tira a bolinha da lista */
@@ -39,7 +40,6 @@ header nav ul li a:hover {  /* Quando o mouse passa encima do elemento, quando p
 }
 
 section{
-    border: 1px solid #000;
     width: 100%;
     height: 500px;
 }
@@ -50,6 +50,7 @@ section:nth-child(even) { /* odd= impar, even=par , a cor de cada section*/
 
 section, footer {
     padding-top: 60px; /* tira o section de entro do espaço do nac ul li a  menu*/
+    padding-bottom: 60px; /* ja que foi aplicado la encima no padding-top: 60px */
 }
 
 .banner{
@@ -58,4 +59,27 @@ section, footer {
 
 .banner img{
     width: 100%;
+}
+
+.borda0{
+    border: none;
+}
+
+.borda1{
+    border: 1px solid #000
+}
+
+.borda2{
+    border: 1px solid #f00;
+}
+
+.flexivel{
+    display: flex;
+    flex-direction: row; /* o fluxo é em linha */
+    justify-content: space-between; /* distribuicao horizontal, mesmo espaco um do outro*/
+}
+
+article{
+    width: 100%;
+    text-align: center;
 }
